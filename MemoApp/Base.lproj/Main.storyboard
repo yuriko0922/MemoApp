@@ -18,18 +18,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="32G-D5-zoo">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bue-mt-Sog">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="削除"/>
+                                <connections>
+                                    <action selector="deleatButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6yh-Eg-nz5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="32G-D5-zoo" secondAttribute="bottom" id="8gx-Fv-5WX"/>
-                            <constraint firstItem="32G-D5-zoo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PfG-xv-xbZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bue-mt-Sog" secondAttribute="trailing" id="HQs-Lx-tZO"/>
                             <constraint firstItem="32G-D5-zoo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="djT-NK-XJ2"/>
-                            <constraint firstItem="32G-D5-zoo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iLi-xC-OY2"/>
+                            <constraint firstItem="Bue-mt-Sog" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="doO-wg-AtM"/>
+                            <constraint firstItem="Bue-mt-Sog" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sUf-1V-7ZS"/>
+                            <constraint firstItem="32G-D5-zoo" firstAttribute="top" secondItem="Bue-mt-Sog" secondAttribute="bottom" id="vtI-KH-FbI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32G-D5-zoo" secondAttribute="trailing" id="wjN-H1-JGK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -40,6 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
     </scenes>
 </document>
